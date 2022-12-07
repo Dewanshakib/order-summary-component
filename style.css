@@ -108,6 +108,7 @@ body{
 }
 .price > a:hover{
     opacity: 0.7;
+    list-style:none;
 }
 .apply-btn > .btn-1:hover{
     opacity: 0.7;
