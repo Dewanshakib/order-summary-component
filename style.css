@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Red Hat Display', sans-serif;
+    background: hsl(225, 100%, 94%);
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./Design/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top 0;
+}
+.card{
+    width: 430px;
+    height: 640px;
+    border-radius: 20px;
+    background: hsl(225, 100%, 98%);
+    overflow: hidden;
+}
+.card > .bg-img{
+    width: 100%;
+    height: 30%;
+}
+.content{
+    width: 100%;
+    height: 68%;
+    text-align: center;    
+}
+.content > .info{
+    width: 100%;
+    height: 40%;
+}
+.content > .info > h2{
+    font-size: 1.75rem;
+    font-weight: 900;
+    margin-top: 1.875rem;
+}
+.content > .info > p{
+    font-size: 1.125rem;
+    width: 77%;
+    margin: 1.25rem auto;
+    font-weight: 400;
+    color: hsl(223, 47%, 23%);
+    opacity: 0.9;
+}
+.content > .price{
+    width: 85%;
+    height: 20%;
+    margin: 10px auto;
+    background: hsl(226, 78%, 95%);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price > .price-info{
+    background-image: url(./Design/icon-music.svg);
+    background-repeat: no-repeat;
+    background-position: top 0 left 1rem;
+    height: 48px;
+}
+.price > .price-info > h3{
+    font-size: 1.0625rem;
+    font-weight: bold;
+    margin-left: 5.125rem;
+}
+.price > .price-info > p{
+    color: hsl(223, 47%, 23%);
+    margin-left: 4.5625rem;
+}
+.price > a{
+    margin-right: 1.25rem;
+    color: hsl(245, 75%, 52%);
+    font-weight: bold;
+}
+.apply-btn{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.apply-btn > .btn-1{
+    width: 80%;
+    height: 27%;
+    margin: 20px auto;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background: hsl(245, 75%, 52%);
+    font-size: 17px;
+    color: #fff;
+    cursor: pointer;
+}
+.apply-btn > a{
+    margin-top: 5px;
+    text-decoration: none;
+    color: hsl(223, 47%, 23%);
+    font-weight: bold;
+}
+.price > a:hover{
+    opacity: 0.7;
+}
+.apply-btn > .btn-1:hover{
+    opacity: 0.7;
+}
+.apply-btn > a:hover{
+    opacity: 0.7;
+}
+@media screen and (max-width: 375px){
+    .container{
+        width: 100%;
+        height: 100vh;
+        background-image: url(./Design/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 0;
+    }
+    .card{
+        width: 90%;
+        height: 80;
+        border-radius: 20px;
+        background: hsl(225, 100%, 98%);
+        overflow: hidden;
+    }
+    .card > .bg-img{
+        width: 100%;
+        height: 30%;
+        background-size: cover;
+        object-fit: cover;
+    }
+    .content > .price{
+        width: 90%;
+        height: 20%;
+        margin: 0px auto;
+        background: hsl(226, 78%, 95%);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .content > .info > p{
+        font-size: 1.125rem;
+        width: 85%;
+        margin: 0 auto;
+        font-weight: 400;
+        color: hsl(223, 47%, 23%);
+        opacity: 0.9;
+    }
+    .content > .info > h2{
+        font-size: 1.75rem;
+        font-weight: 900;
+        margin-top: 1.875rem;
+        margin-bottom: 1.25rem;
+    }
+}
+
