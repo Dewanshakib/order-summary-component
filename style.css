@@ -99,6 +99,7 @@ body{
     font-size: 17px;
     color: #fff;
     cursor: pointer;
+    box-shadow: #382ae0 0px 6px 20px -5px;
 }
 .apply-btn > a{
     margin-top: 5px;
